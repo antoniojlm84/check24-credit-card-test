@@ -113,3 +113,8 @@ field 'anmerkungen' of the credit cards.
 
 ### Tests
 
+To run PhpUnit test suit you must ise the following command in the project root:
+
+```shell
+make test-phpunit
+```
