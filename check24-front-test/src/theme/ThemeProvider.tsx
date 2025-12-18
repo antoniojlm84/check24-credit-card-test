@@ -1,0 +1,35 @@
+import { FC, useState, createContext, useEffect } from 'react';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material';
+import { themeCreator } from './base';
+
+export const ThemeContext = createContext((_themeName: string): void => {});
+
+interface Props {
+  children: React.ReactNode;
+}
+
+const ThemeProviderWrapper: FC = ({ children }: Props) => {
+  const [themeName, _setThemeName] = useState('PureLightTheme');
+
+  useEffect(() => {
+    const curThemeName =
+      window.localStorage.getItem('appTheme') || 'PureLightTheme';
+    _setThemeName(curThemeName);
+  }, []);
+
+  const theme = themeCreator(themeName);
+  const setThemeName = (themeName: string): void => {
+    window.localStorage.setItem('appTheme', themeName);
+    _setThemeName(themeName);
+  };
+
+  return (
+    <StyledEngineProvider injectFirst>
+      <ThemeContext.Provider value={setThemeName}>
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      </ThemeContext.Provider>
+    </StyledEngineProvider>
+  );
+};
+
+export default ThemeProviderWrapper;

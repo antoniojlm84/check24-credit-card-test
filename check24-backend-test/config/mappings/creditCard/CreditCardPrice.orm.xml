@@ -1,0 +1,5 @@
+<doctrine-mapping>
+    <embeddable name="Check24\BackendTest\Domain\Model\CreditCard\CreditCardPrice">
+        <field column="price" name="value" type="float" nullable="true"/>
+    </embeddable>
+</doctrine-mapping>

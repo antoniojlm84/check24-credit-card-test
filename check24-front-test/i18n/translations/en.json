@@ -1,0 +1,74 @@
+{
+  "i18n": {
+    "403": {
+      "button-back": "Back",
+      "text1": "Forbidden",
+      "text2": "You are not allowed to access this page."
+    },
+    "404": {
+      "button-back": "Go to homepage",
+      "text1": "Page Not Found",
+      "text2": "The page you are looking for doesn't exist or has been moved"
+    },
+    "500": {
+      "button-back": "Back",
+      "text1": "There was an error, please try again later.",
+      "text2": "Something has gone wrong, please contact the system administrator to review the problem, thank you very much for your patience."
+    },
+    "actions": {
+      "import_credit_cards": "Import cards",
+      "loading": "Loading..."
+    },
+    "app": {
+      "meta_title": "Chek24 - Compare Credit Cards",
+      "title": "Chek24 - Compare Credit Cards"
+    },
+    "buttons": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "clean": "Reset",
+      "compare_credit_cards": "Comparison of credit cards",
+      "close": "Close",
+      "confirm": "Ok",
+      "edit": "Edit",
+      "reset": "Reset",
+      "save": "Save"
+    },
+    "credit_cards": {
+      "no_items": "No credit cards available.",
+      "order_by": "Order by",
+      "name": "Name",
+      "price": "Price",
+      "online": "Contractable online",
+      "annual_fee": "Annual fee",
+      "first_year_fee": "First year fee:",
+      "interest_rate": "APR",
+      "view_offer": "View offer on the website »"
+    },
+    "field_errors": {
+      "address_spain_only": "Only addresses from Spain are allowed",
+      "already_exists": "The field already exists in the system.",
+      "email_no_valid": "The email provided should be a valid email address.",
+      "no_valid": "The field is not valid.",
+      "only_uppercase": "The field only allows uppercase letters.",
+      "only_uppercase_and_numbers": "The field only allows uppercase letters and numbers.",
+      "only_uppercase_numbers_spaces": "The field only allows uppercase letters, numbers and spaces.",
+      "partner_domain_exists": "The email domain already exists in our database, this is usually because your company's account already exists in our records.",
+      "required": "The field is required.",
+      "required_zipcode": "The zipcode is required. Please update the address.",
+      "too_long": "Too long - Maximum {{ max }} characters."
+    },
+    "messages": {
+      "import_ok": "Credit cards imported successfully!"
+    },
+    "ui": {
+      "english": "English",
+      "languageSwitcher": "Choose Language",
+      "spanish": "Español"
+    },
+    "yes_no_status": {
+      "false": "No",
+      "true": "Yes"
+    }
+  }
+}

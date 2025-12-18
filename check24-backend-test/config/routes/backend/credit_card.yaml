@@ -1,0 +1,17 @@
+post_credit_card_import:
+    methods:
+        - POST
+    path: /api/credit-cards/import
+    controller: Check24\BackendTest\Infrastructure\Delivery\Action\CreditCard\CreditCardImportController
+
+get_credit_card_list:
+    methods:
+        - GET
+    path: /api/credit-cards
+    controller: Check24\BackendTest\Infrastructure\Delivery\Action\CreditCard\CreditCardListGetController
+
+get_credit_card_show:
+    methods:
+        - GET
+    path: /api/credit-cards/{creditCardId}
+    controller: Check24\BackendTest\Infrastructure\Delivery\Action\CreditCard\CreditCardShowGetController

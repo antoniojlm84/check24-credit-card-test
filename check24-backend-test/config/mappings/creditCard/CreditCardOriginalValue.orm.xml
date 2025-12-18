@@ -1,0 +1,9 @@
+<doctrine-mapping>
+    <embeddable name="Check24\BackendTest\Domain\Model\CreditCard\CreditCardOriginalValue">
+        <field name="originalValue" type="json" nullable="true">
+            <options>
+                <option jsonb="true" />
+            </options>
+        </field>
+    </embeddable>
+</doctrine-mapping>

@@ -1,0 +1,74 @@
+{
+  "i18n": {
+    "403": {
+      "button-back": "Volver",
+      "text1": "Prohibido",
+      "text2": "No tienes permisos para acceder a esta página."
+    },
+    "404": {
+      "button-back": "Volver",
+      "text1": "Página no encontrada",
+      "text2": "La página que estás intentando consultar no existe o ha sido movida"
+    },
+    "500": {
+      "button-back": "Volver",
+      "text1": "Oops. Algo ha salido mal. Intentelo de nuevo.",
+      "text2": "Algo ha salido mal, por favor consulte con el administrador del sistema para revisar el problema, muchas gracias por su paciencia."
+    },
+    "actions": {
+      "import_credit_cards": "Importar tarjetas",
+      "loading": "Cargando..."
+    },
+    "app": {
+      "meta_title": "Check24 - Compara Tarjetas de Crédito",
+      "title": "Check24 - Compara Tarjetas de Crédito"
+    },
+    "buttons": {
+      "back": "Volver",
+      "cancel": "Cancelar",
+      "clean": "Limpiar",
+      "compare_credit_cards": "Comparador de tarjetas de crédito",
+      "close": "Cerrar",
+      "confirm": "Confirmar",
+      "edit": "Editar",
+      "reset": "Restablecer",
+      "save": "Guardar"
+    },
+    "credit_cards": {
+      "no_items": "No hay tarjetas de crédito disponibles.",
+      "order_by": "Ordenar por",
+      "name": "Nombre",
+      "price": "Precio",
+      "online": "Contratable online",
+      "annual_fee": "Cuota anual",
+      "first_year_fee": "Cuota primer año:",
+      "interest_rate": "TAE",
+      "view_offer": "Ver oferta en la web »"
+    },
+    "field_errors": {
+      "address_spain_only": "Permitidas solo direcciones de España",
+      "already_exists": "Información ya registrada en el sistema.",
+      "email_no_valid": "El correo electrónico proporcionado no es válido.",
+      "no_valid": "El campo no es válido.",
+      "only_uppercase": "El campo solo permite letras mayúsculas.",
+      "only_uppercase_and_numbers": "El campo solo permite mayúsculas y números.",
+      "only_uppercase_numbers_spaces": "El campo solo permite mayúsculas, números y espacios.",
+      "partner_domain_exists": "El dominio de correo ya existe en nuestra base de datos, esto suele deberse a que ya existe una cuenta de su empresa en nuestros registros",
+      "required": "El campo es obligatorio.",
+      "required_zipcode": "El código postal es obligatorio. Por favor, actualiza la dirección.",
+      "too_long": "Demasiado largo - Máximo {{ max }} caracteres."
+    },
+    "messages": {
+      "import_ok": "¡Tarjetas importadas correctamente!"
+    },
+    "ui": {
+      "english": "English",
+      "languageSwitcher": "Selecciona idioma",
+      "spanish": "Español"
+    },
+    "yes_no_status": {
+      "false": "No",
+      "true": "Si"
+    }
+  }
+}

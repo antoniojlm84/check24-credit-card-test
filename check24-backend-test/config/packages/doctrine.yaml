@@ -1,0 +1,23 @@
+doctrine:
+    dbal:
+        dbname: '%env(resolve:DATABASE_NAME)%'
+        host: '%env(resolve:DATABASE_HOST)%'
+        port: '%env(resolve:DATABASE_PORT)%'
+        user: '%env(resolve:DATABASE_USER)%'
+        password: '%env(resolve:DATABASE_PASSWORD)%'
+        server_version: '%env(resolve:DATABASE_SERVER_VERSION)%'
+        charset: UTF8
+        options:
+            1002: "SET NAMES 'UTF8' COLLATE 'utf8_unicode_ci'"
+        types:
+            credit_card_id: Check24\BackendTest\Infrastructure\Persistence\Doctrine\Type\CreditCardIdType
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+        auto_mapping: true
+        mappings:
+            CreditCard:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/config/mappings/creditCard'
+                prefix: 'Check24\BackendTest\Domain\Model\CreditCard'

@@ -1,0 +1,27 @@
+parameters:
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    Check24\BackendTest\:
+        autowire: true
+        resource: '../src/*'
+
+    Check24\BackendTest\Infrastructure\Delivery\Action\:
+        resource: '../src/Infrastructure/Delivery/Action/*'
+        tags: [ 'controller.service_arguments' ]
+
+    League\Fractal\Serializer\JsonApiSerializer:
+        class: League\Fractal\Serializer\JsonApiSerializer
+
+    JsonApiDataTransformer:
+        class: Check24\BackendTest\Infrastructure\Delivery\Response\JsonApi\Transformer\JsonApiFractalDataTransformer
+        arguments:
+            $manager: League\Fractal\Manager
+            $serializer: JsonApiSerializer
+
+    League\Fractal\Manager:
+        class: League\Fractal\Manager

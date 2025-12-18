@@ -1,0 +1,6 @@
+[Mon Dec 15 19:51:40.388579 2025] [proxy_fcgi:error] [pid 124:tid 156] [client 172.192.0.1:50886] AH01067: Failed to read FastCGI header
+[Mon Dec 15 19:51:40.389253 2025] [proxy_fcgi:error] [pid 124:tid 156] (104)Connection reset by peer: [client 172.192.0.1:50886] AH01075: Error dispatching request to : 
+[Wed Dec 17 16:30:01.589539 2025] [proxy_fcgi:error] [pid 164:tid 174] [client 172.192.0.1:47960] AH01067: Failed to read FastCGI header
+[Wed Dec 17 16:30:01.591495 2025] [proxy_fcgi:error] [pid 164:tid 174] (104)Connection reset by peer: [client 172.192.0.1:47960] AH01075: Error dispatching request to : 
+[Wed Dec 17 16:33:01.994294 2025] [proxy_fcgi:error] [pid 164:tid 196] [client 172.192.0.1:40144] AH01067: Failed to read FastCGI header
+[Wed Dec 17 16:33:01.995038 2025] [proxy_fcgi:error] [pid 164:tid 196] (104)Connection reset by peer: [client 172.192.0.1:40144] AH01075: Error dispatching request to : 

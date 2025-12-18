@@ -1,0 +1,9 @@
+<doctrine-mapping>
+    <embeddable name="Check24\BackendTest\Domain\Model\CreditCard\CreditCardName">
+        <field column="name" name="value" type="string" length="255">
+            <options>
+                <option name="default"/>
+            </options>
+        </field>
+    </embeddable>
+</doctrine-mapping>

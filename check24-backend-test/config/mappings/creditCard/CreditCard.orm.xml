@@ -1,0 +1,21 @@
+<doctrine-mapping>
+    <entity name="Check24\BackendTest\Domain\Model\CreditCard\CreditCard">
+        <id name="id" type="credit_card_id">
+            <generator strategy="NONE" />
+        </id>
+        <embedded name="productId" class="Check24\BackendTest\Domain\Model\CreditCard\CreditCardProductId" use-column-prefix="false"/>
+        <embedded name="bankId" class="Check24\BackendTest\Domain\Model\CreditCard\CreditCardBankId" use-column-prefix="false"/>
+        <embedded name="name" class="Check24\BackendTest\Domain\Model\CreditCard\CreditCardName" use-column-prefix="false"/>
+        <embedded name="price" class="Check24\BackendTest\Domain\Model\CreditCard\CreditCardPrice" use-column-prefix="false"/>
+        <embedded name="originalValue" class="Check24\BackendTest\Domain\Model\CreditCard\CreditCardOriginalValue" use-column-prefix="false"/>
+        <embedded name="editedValue" class="Check24\BackendTest\Domain\Model\CreditCard\CreditCardEditedValue" use-column-prefix="false"/>
+        <field name="deleted" type="boolean">
+            <options>
+                <option name="default">0</option>
+            </options>
+        </field>
+        <field name="deletedAt" type="datetime_immutable" nullable="true" />
+        <field name="createdAt" type="datetime_immutable" nullable="false" />
+        <field name="updatedAt" type="datetime_immutable" nullable="true" />
+    </entity>
+</doctrine-mapping>

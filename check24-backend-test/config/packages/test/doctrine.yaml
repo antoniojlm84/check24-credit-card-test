@@ -1,0 +1,9 @@
+doctrine:
+    dbal:
+        default_connection: db_conn
+        # "TEST_TOKEN" is typically set by ParaTest
+        #dbname_suffix: '_test%env(default::TEST_TOKEN)%'
+        connections:
+            db_conn:
+                url: >
+                    mysql://%env(resolve:DATABASE_USER)%:%env(resolve:DATABASE_PASSWORD)%@%env(resolve:DATABASE_HOST)%:%env(resolve:DATABASE_PORT)%/%env(resolve:DATABASE_NAME)%%env(resolve:DATABASE_QUERY)%
