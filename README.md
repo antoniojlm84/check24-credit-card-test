@@ -1,5 +1,7 @@
 ## Check24 credit cards TEST
--- Antonio de Lucas --
+
+<img width="1789" height="695" alt="image" src="https://github.com/user-attachments/assets/50e94a92-13ad-439b-ad14-954bd95eff16" />
+
 
 ### About the project
 
